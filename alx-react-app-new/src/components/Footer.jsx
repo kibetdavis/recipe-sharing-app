@@ -1,16 +1,26 @@
-function Footer() {
-  const footerStyle = {
-    backgroundColor: '#f1f1f1',
-    padding: '15px',
+import React from 'react';
+
+const UserProfile = () => {
+  const profileStyle = {
+    border: '1px solid #ccc',
+    padding: '20px',
+    margin: '20px',
+    borderRadius: '10px',
     textAlign: 'center',
-    marginTop: '40px'
+    backgroundColor: '#f9f9f9'
+  };
+
+  const nameStyle = {
+    color: 'blue',
+    fontSize: '10px'
   };
 
   return (
-    <footer style={footerStyle}>
-      <p>&copy; 2025 Davis Kibet. All rights reserved.</p>
-    </footer>
+    <div style={profileStyle}>
+      <span style={nameStyle}>John Doe</span>
+      <p>Software Developer based in Nairobi.</p>
+    </div>
   );
-}
+};
 
-export default Footer;
+export default UserProfile;

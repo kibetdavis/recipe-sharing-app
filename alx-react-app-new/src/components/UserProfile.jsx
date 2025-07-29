@@ -1,30 +1,26 @@
-function UserProfile() {
+import React from 'react';
+
+const UserProfile = () => {
   const profileStyle = {
-    border: '2px solid #ccc',
+    border: '1px solid #ccc',
     padding: '20px',
-    borderRadius: '8px',
+    margin: '20px',
+    borderRadius: '10px',
     textAlign: 'center',
-    margin: '20px auto',
-    width: '300px'
+    backgroundColor: '#f9f9f9'
   };
 
-  const imageStyle = {
-    borderRadius: '50%',
-    width: '100px',
-    height: '100px'
+  const nameStyle = {
+    color: 'blue',
+    fontSize: '20px'
   };
 
   return (
     <div style={profileStyle}>
-      <img
-        src="https://via.placeholder.com/100"
-        alt="Profile"
-        style={imageStyle}
-      />
-      <h2>Davis Kibet</h2>
-      <p>Frontend Developer | React Enthusiast</p>
+      <span style={nameStyle}>John Doe</span>
+      <p>Software Developer based in Nairobi.</p>
     </div>
   );
-}
+};
 
 export default UserProfile;
